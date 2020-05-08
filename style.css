@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Jost:400,500,600,700,800,900');
+
+body {
+  background-color: #efebe9;
+  font-family: 'Jost', sans-serif;
+}
+.container {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  width: 30em;
+}
+
+#input {
+  background-color: #efebe9;
+  width: 26em;
+  border: none;
+  margin-bottom: 2em;
+  border-bottom: solid 1px;
+  font-size: .8rem;
+}
+
+.completed-list {
+  width: 30em;
+}
+
+ul li {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  border: 1px solid;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-top: 2em;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+}
+
+.input-container{
+  width: 30em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: #efebe9;
+  border: none;
+  font-size: 1.2rem;
+}
+.submit:hover {
+  color: #66bb6a;
+}
+
+#removedbtn, #completedbtn {
+  cursor: pointer;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+}
+#completedbtn:hover{
+  color: #ffff8b;
+}
+#removedbtn:hover{
+  color: #ef5350;
+}
+.btn-container {
+  display: flex;
+  width: 6em;
+  justify-content: space-around;
+}
+
+@media (max-width: 1100px) {
+  .input-container{
+    width: 28em;
+  }
+
+  #input {
+  width: 21em;
+  }
+
+  .container {
+    display: grid;
+  }
+
+  .completed-list {
+    position: inherit;
+    margin: auto;
+    width: 90%;
+    font-size: .7rem;
+  }
+
+  form {
+    margin: auto;
+    width: 90%;
+    font-size: .7rem;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}
